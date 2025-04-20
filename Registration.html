@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="hero">
+    <img src="background7.png" alt="Hero Image">
+	 <div class="container">
+     <div class="form-container">
+      <h2>Registration</h2>
+      <form id="signup-form" action="Insert.php" method="POST">
+        <div class="form-group">
+          <label for="user-type">Select User Type:</label>
+          <select id="user-type" name="user_type" required>
+            <option value="">Select User Type</option>
+            <option value="customer">Customer</option>
+            <option value="owner">Owner</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label><i class="fa fa-user" ></i></label>
+          <input class="name" type="text" placeholder="First-name" name="first_name" required> 
+        </div>
+		<div class="form-group">
+          <label><i class="fa fa-user" ></i></label>
+          <input class="name" type="text" placeholder="Last-name" name="last_name" required> 
+        </div>
+        <div class="form-group">
+          <label><i class="fa fa-envelope" ></i></label>
+          <input class="email" type="text" placeholder="E-mail" name="email" required> 
+        </div>
+		<div class="form-group">
+          <label><i class="fa fa-phone" ></i></label>
+          <input class="phone" type="text" placeholder="Phone" name="phone_no" required> 
+        </div>
+		<div class="form-group">
+          <label><i class="fa fa-address-card" ></i></label>
+          <input class="address" type="text" placeholder="Address" name="address" required> 
+        </div>
+		<div class="form-group">
+          <label><i class="fa fa-calendar" ></i> d.o.b</label>
+          <input class="date-of-birth" type="text" placeholder="YYYY-MM-DD" name="date_of_birth" required> 
+        </div>
+		
+		<div class="form-group">
+		  <label><br>Gender</br></label>
+		  <label><i class="fa fa-male"></i></label>
+          <label><i class="fa fa-female"></i></label>
+          <input class="gender" type="radio" placeholder="Gender" name="gender" value="male" required>Male  
+          <input class="gender" type="radio" placeholder="Gender" name="gender" value="female" required>Female  		  
+        </div>
+		
+        <div class="form-group">
+		  <label><i class="fa fa-key" ></i></label>
+          <input class="password" type="text" placeholder="Password" name="password" required>        
+        </div>
+       
+       <button><input type="submit" value="sign up"></button>
+      </form>
+    </div>
+  </div>
+  
+  <section id="customer-data"></section>
+
+</body>
+</html>

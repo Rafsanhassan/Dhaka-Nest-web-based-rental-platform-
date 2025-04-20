@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #343a40;
+    border-radius: 5px 5px 0 0;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.nav-link {
+    color: #ccc;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.nav-link.active .badge {
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    padding: 3px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -5px;
+  }
+  
